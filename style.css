@@ -1,0 +1,74 @@
+body{
+    font-weight: 300;
+    font-size: 20px;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 300;
+}
+
+p{
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+a{
+    margin-right: 20px;
+}
+
+a:hover{
+    color: rgb(166, 210, 210);
+    outline: 0;
+    text-decoration: none;
+}
+
+nav {margin-bottom: 30px}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    background-color: rgb(180, 185, 196);
+    border-radius: 5px;
+    color: rgb(100, 97, 97);
+    padding: 5px 5px;
+    
+} 
+
+.btn:hover{
+    transform: scale(1.07, 1.07);
+    transition: 0.7s;
+    
+}
+
+.btn{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.bodystyle{
+    animation: style 12s linear infinite alternate;
+}
+
+@keyframes style {
+    0%, 100%{
+        background-color: rgb(214, 235, 249);
+     }
+     25%{
+         background-color: rgb(175, 214, 234);
+     }
+     50%{
+         background-color: rgb(197, 181, 215);
+     }
+     75%{
+         background-color: rgb(196, 196, 231);
+     }
+ }
+
+
+
+
+
+

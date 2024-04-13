@@ -1,0 +1,82 @@
+#google_game{
+    width: 800px;
+    height: 200px;
+    border-bottom: solid black 2px;
+    margin: auto;
+    background-color: aqua;
+    background-image: url('imggame/облако.png');
+    animation: cloud 10s linear infinite;
+}
+
+#dino{
+    width: 40px;
+    height: 40px;
+    background-image: url(imggame/Новый\ проект\ \(1\).gif);
+    background-size: 40px 40px;
+    position: relative;
+    top: 164px
+}
+
+#cactus{
+    height: 30px;
+    width: 30px;
+    background-image: url(imggame/Новый\ проект.png);
+    background-size: 30px 30px;
+    position: relative;
+    top: 130px;
+    left: 750px;
+    animation: cactus 3s infinite linear;
+}
+
+.button a{
+    text-decoration: none;
+    background-color: rgb(156, 223, 223);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin: 10px 10px;
+    color: black;
+}
+
+.button{
+    margin-top: 20%;
+    text-align: center;
+}
+
+.button:hover{
+    transform: scale(1.07, 1.07);
+    transition: 0.7s;
+}
+
+@keyframes cloud{
+    from{
+        background-position-x: 0px;
+    }
+    to{
+        background-position-x: 500px;
+    }
+}
+
+@keyframes cactus{
+    0%{
+        left: 780px
+    }
+    100%{
+        left: -20px
+    }
+}
+
+.dinojump{
+    animation: dinojump 0.5s linear;
+}
+
+@keyframes dinojump{
+    0%{
+        top: 164px;
+    }
+    50%{
+        top: 80px;
+    }
+    100%{
+        top: 164px;
+    }
+}
